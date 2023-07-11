@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="register.css">
+    </head>
+    <body>
+        
+        <h2>Start your free trail now!!</h2>
+        <div class="container" id="container">
+           
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Sign In</h1>
+                    <br><br>
+                    <center>
+                    <input type="email" placeholder="Email"/>
+                    <input type="password" placeholder="Password"/>
+                    </center>
+                    <a href="#">Forgot Password?</a>
+                    
+                    <button>Sign In</button>
+                    
+                </form>
+            </div>
+            
+        </div>
+        <footer>
+            <div class="footer-bottom text-center">
+                Copyright &copy; Supriya_Vuppula
+
+            </div>
+        </footer>
+        <script>
+            const signUpButton =document.getElementById('signUp');
+            const signInButton=document.getElementById('signIn');
+            const container=document.getElementById('container');
+            signUpButton.addEventListener('click',()=>{
+                container.classList.add("right-panel-active");
+            });
+            signInButton.addEventListener('click',()=>{
+                container.classList.remove("right-panel-active");
+            });
+        </script>
+    </body>
+</html>
